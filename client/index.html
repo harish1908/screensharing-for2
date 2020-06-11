@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>homepage</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Cabin&family=Lobster&family=Noto+Serif&display=swap" rel="stylesheet">
+        <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+         <script src="webrtc.js"></script>
+         <style>
+
+                body{
+                    font-family: 'Bitter', serif;
+                        font-family: 'Lobster', cursive;
+                        background-color:teal;
+                        color: darkslategray;
+                }
+
+                .headline{
+                    font-family: 'Bitter', serif;
+                    font-family: 'Lobster', cursive;
+                   
+                   
+                }
+                .wel{
+                    color: rgb(0, 5, 10);
+                    padding-left: 600px;
+                    font-size: 30px;
+                }
+                .list{
+                    width: 300px;
+                    font-family: 'Bitter', serif;
+                    font-family: 'Lobster', cursive;
+                    color: rgb(0, 5, 10);
+                    height: 600px;
+                    float: left;
+                    
+                    background-color: cornflowerblue;
+                    
+                }
+                .user
+                {
+                    border-color: black;
+                    color: rgb(0, 5, 10);
+                    font-family: 'Bitter', serif;
+                    font-family: 'Cabin', sans-serif;
+                    font-family: 'Lobster', cursive;
+                    font-family: 'Noto Serif', serif;
+                    font-size: 30px;
+                    margin-top: 6px;
+                    outline-color: black;
+                    width: 290px;
+                    height: 50px;
+                    padding-left: 10px;
+                    background-color:darkgray;
+                }
+                
+                .userkliye
+                {
+                    border-color: black;
+                    color: rgb(0, 5, 10);
+                    font-family: 'Bitter', serif;
+                    font-family: 'Cabin', sans-serif;
+                    font-family: 'Lobster', cursive;
+                    font-family: 'Noto Serif', serif;
+                    font-size: 35px;
+                    padding-left: 50px;
+                    outline-color: black;
+                    width: 250px;
+                    height: 50px;
+                    background-color: #fff;
+                }
+
+                .screen{
+                    margin-left: 350px;
+                    position: relative;
+                    background-color: rgb(37, 37, 41);
+                    height: 600px;
+                    flex: 1;
+                }
+                
+                #butn{
+                    text-align: center;
+                    border-radius: 80px;
+                    background-color: lawngreen;
+                    margin-left: 300px;
+                    width: 400px;
+                    flex: 1;
+                }
+                #userkliye #butn{
+                    display: flex;
+                }
+
+         </style>
+    </head>
+    <body>
+           
+        
+           <h1 class="wel">Welcome</h1>
+           <hr>
+           <h1 class="userkliye">Active user</h1>
+        <div class="list" id="ulist">
+        
+            
+
+        </div>
+        <button type="button" id="butn" >SHARE YOUR SCREEN</button>
+        <div class="screen" id="vidcon">
+            <video id="localVideo" autoplay muted></video>
+           
+            
+        
+    </div>
+    <script>
+      start();
+    </script>
+    </body>
+</html>
